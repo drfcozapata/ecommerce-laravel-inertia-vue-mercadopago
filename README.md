@@ -1,13 +1,13 @@
-# Ecommerce app
+# e-commerce App
 
-Ecommerce built using laravel 9, vue 3, inertia.js and Mercado Pago to make payments.
+Ecommerce built using Laravel 10, Vue.js 3, Inertia.js and Mercado Pago to make payments.
 This project was developed initially by @Jordan-Bianco using a TDD approach.<br>
 
-I changed some elements, modified styles, changed the payment through Stripe to Mercado Pago, added authorization levels (users and admins) and the views to be able to manage the product inventory from the dashboard.
+I'm changing some elements, modifying styles, changing the payment from Stripe to Mercado Pago, and will add authorization levels (users and admins) and the views to be able to manage the product inventory from the dashboard.
 
 ## DB structure
 
-![Db-structure](public/demo/DB_structure.png)
+<img src="./public/demo/DB_structure.png" width="60%" />
 
 ## Shop
 
@@ -15,16 +15,22 @@ Each user can view the products for sale and apply filters on them.<br>
 It is possible to search for a product by name, filter the results by category or by price, all without refreshing the page.<br>
 It is also possible to sort the results by price or by "best sellers".
 
-https://user-images.githubusercontent.com/116803143/204110439-dc42cc84-8290-4747-94d0-bf92fe011930.mp4
-
+<img src="./public/demo/shop1.png" width="60%" />
+<br>
+<br>
 Once logged in, the user can add the products to his cart, or save them in his whishlist.
 When the user clicks the payment button, he is redirected to the payment page provided by stripe. <br> When the user enters his data and makes the payment, he is redirected to a purchase confirmation page.
 
-https://user-images.githubusercontent.com/116803143/204110446-5cc65243-042c-4b8c-87e4-f37e233d4e54.mp4
+<br>
+<img src="./public/demo/shop1.gif" width="60%" />
+
+<img src="./public/demo/shop2.png" width="60%" />
+
+<img src="./public/demo/shop3.png" width="60%" />
 
 ## User Dashboard
 
 From the dashboard a registered user can summarize his purchases, view how many orders he has placed in a period of time, how much he has spent on average, etc.
 He can also view his orders in detail and update his profile information (username and password).
 
-https://user-images.githubusercontent.com/116803143/204110452-fc9c5f6c-9a4d-4688-98d3-e59fea92cedb.mp4
+<img src="./public/demo/shop2.gif" width="60%" />
