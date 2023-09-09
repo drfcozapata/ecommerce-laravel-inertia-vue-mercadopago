@@ -22,6 +22,7 @@
         "vue": "^3.3.4"
     },
     "dependencies": {
+        "@mercadopago/sdk-js": "^0.0.3",
         "chart.js": "^4.4.0",
         "dayjs": "^1.11.9",
         "vue-chartjs": "^5.2.0"

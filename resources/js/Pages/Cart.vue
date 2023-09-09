@@ -84,6 +84,20 @@ const productImageJpg = (product) => {
 
     return "/images/" + preview.img;
 };
+
+// const mp = new MercadoPago("{{ config('services.mercadopago.key') }}", {
+//     locale: "es-MX",
+// });
+
+// mp.checkout({
+//     preference: {
+//         id: "{{ $preference -> id }}",
+//     },
+//     render: {
+//         container: ".cho.container", // Indica dónde se mostrará el botón de pago
+//         label: "Pagar", //Cambia el texto del botón de pago (opcional)
+//     },
+// });
 </script>
 
 <template>
@@ -271,7 +285,14 @@ const productImageJpg = (product) => {
                             >
                         </div>
 
-                        <Link
+                        <div
+                            method="post"
+                            as="button"
+                            class="flex justify-center items-center text-xxs bg-c-green-600 hover:bg-c-green-300 w-full py-3 text-white uppercase cursor-pointer rounded"
+                        >
+                            <span class="cho.container">Pagar</span>
+                        </div>
+                        <!-- <Link
                             :href="route('checkout')"
                             method="post"
                             as="button"
@@ -305,7 +326,7 @@ const productImageJpg = (product) => {
                                     />
                                 </g>
                             </svg>
-                        </Link>
+                        </Link> -->
                     </div>
                 </footer>
             </section>
